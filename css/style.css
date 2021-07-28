@@ -411,31 +411,28 @@ i {
     color: var(--color-purple);
 }
 
-.splide__slide {
-    background: turquoise;
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.splide__arrow {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    border: none;
-    background-color: #666;
-}
-
-.splide__arrow--prev, .splide__arrow--next {
-    position: relative;
-}
-
-.splide__arrow--prev svg {
-    position: absolute;
-    left: 11px;
-    top: 9px;
-    transform: rotate(180deg);
-}
-
-.splide__arrow--next svg {
-    position: absolute;
-    right: 11px;
-    top: 9px;
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    height: calc((100% - 30px) / 2);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
 }

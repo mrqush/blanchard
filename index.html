@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/choices.min.css">
-    <link rel="stylesheet" href="css/splide-core.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css">
     <title>Blanchard</title>
 </head>
@@ -274,24 +274,46 @@
                     </p>
                 </div>
                 <div class="gallery__right">
-                    <div class="splide">
-                        <div class="splide__track">
-                            <ul class="splide__list">
-                                <li class="splide__slide"><img src="img/gallery1.jpg" alt=""></li>
-                                <li class="splide__slide"><img src="img/gallery2.jpg" alt=""></li>
-                                <li class="splide__slide"><img src="img/gallery3.jpg" alt=""></li>
-                                <li class="splide__slide"><img src="img/gallery1.jpg" alt=""></li>
-                                <li class="splide__slide"><img src="img/gallery2.jpg" alt=""></li>
-                                <li class="splide__slide"><img src="img/gallery3.jpg" alt=""></li>
-                            </ul>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </div>
     </main>
-    <script src="js/splide.min.js"></script>
+    <div class="swiper-container my-swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <!-- <div class="swiper-slide"><img src="img/gallery1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="img/gallery2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="img/gallery3.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="img/gallery4.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="img/gallery5.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="img/gallery6.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="img/gallery7.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="img/gallery8.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="img/gallery9.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="img/gallery10.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="img/gallery11.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="img/gallery12.jpg" alt=""></div> -->
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
     <script src="js/choices.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 

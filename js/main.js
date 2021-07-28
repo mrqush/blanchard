@@ -1,21 +1,16 @@
-document.addEventListener('DOMContentLoaded', function () {
-    new Splide('.splide', {
-        width: '350px',
-        height: '350px',
-        perPage: 3,
-        rewind: true,
-        // padding: 10,
-        classes: {
-            // arrows: 'splide__arrows your-class-arrows',
-            arrow: 'splide__arrow',
-            prev: 'splide__arrow--prev',
-            next: 'splide__arrow--next',
-
-            pagination: 'splide__pagination your-class-pagination', // container
-            page: 'splide__pagination__page your-class-page', // each button
-        },
-        // arrowPath: '0',
-    }).mount();
+let swiper = new Swiper('.my-swiper', {
+    slidesPerView: 3,
+    direction: 'horizontal',
+    slidesPerColumn: 2,
+    spaceBetween: 30,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
 });
 
 const element = document.querySelector('.js-choice');
@@ -24,5 +19,3 @@ const choices = new Choices(element, {
     searchChoices: false,
     itemSelectText: '',
 })
-
-// new Splide( '.splide' ).mount();
