@@ -1,0 +1,441 @@
+:root {
+    --color-white: #fff;
+    --color-black: #333;
+    --color-purple: #9d5cd0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    line-height: 1;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-family: "Open Sans";
+}
+
+.container {
+    width: 1600px;
+    margin: 0 auto;
+}
+
+.header {
+    margin: 0 auto;
+    background: url(../img/header-slide1.jpg) no-repeat center center;
+    background-size: 100% 100%;
+    transition: background-size 0.5s ease-in;
+    -moz-transition: background-size 0.5s ease-in;
+    -web-kit-transition: background-size 0.5s ease-in;
+}
+
+.header:hover {
+    background-size: 105% 105%;
+}
+
+.header__top {
+    background: #000;
+    color: var(--color-white);
+}
+
+.header__container {
+    display: flex;
+    height: 100px;
+    padding: 15px 0;
+    align-items: center;
+}
+
+.header__logo {
+    margin-right: 179px;
+}
+
+.nav__list {
+    display: flex;
+    font-size: 18px;
+}
+
+.nav__item:not(:last-child) {
+    margin-right: 62px;
+}
+
+.header__login {
+    margin-left: auto;
+}
+
+.login__button {
+    padding-left: 20px;
+    background: url(../img/login.svg) no-repeat left center;
+}
+
+.header__bottom {
+    height: 70px;
+    display: flex;
+    background: rgba(0, 0, 0, 0.4);
+    color: var(--color-white);
+    font-size: 18px;
+}
+
+.header-bottom__container {
+    display: flex;
+    align-items: center;
+}
+
+.header__dropdown {
+    display: flex;
+    height: 100%;
+}
+
+.dropdown__initial {
+    height: 100%;
+    line-height: 67px;
+    cursor: pointer;
+    position: relative;
+}
+
+.dropdown__initial:hover .dropdown__wrapper {
+    display: block;
+    cursor: default;
+}
+
+.dropdown__initial:not(:last-child) {
+    margin-right: 96px;
+}
+
+.header__search {
+    padding-left: 31px;
+    margin-left: auto;
+    background: url(../img/search.svg) no-repeat left center;
+}
+
+.search__input {
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--color-white);
+    line-height: 25px;
+    color: var(--color-white);
+    font-family: "Open Sans";
+    font-size: 18px;
+}
+
+.search__input::placeholder {
+    color: var(--color-white);
+    opacity: 85%;
+    font-size: 18px;
+}
+
+i {
+    margin-bottom: 3px;
+    border: solid var(--color-white);
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.dropdown__wrapper {
+    padding: 40px;
+    padding-right: 20px;
+    margin-top: 3px;
+    width: 300px;
+    height: 300px;
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    display: none;
+}
+
+.dropdown__list {
+    overflow-y: scroll;
+    max-height: 220px;
+}
+
+.dropdown__item {
+    display: flex;
+    align-items: center;
+    padding-left: 14px;
+    width: 220px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.dropdown__item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.dropdown__list_realism .dropdown__item:nth-child(4n + 1) {
+    background: url(../img/realizm1jpg.jpg);
+}
+
+.dropdown__list_realism .dropdown__item:nth-child(4n + 2) {
+    background: url(../img/realizm2.jpg);
+}
+
+.dropdown__list_realism .dropdown__item:nth-child(4n + 3) {
+    background: url(../img/realizm3.jpg);
+}
+
+.dropdown__list_realism .dropdown__item:nth-child(4n + 4) {
+    background: url(../img/realizm4.jpg);
+}
+
+.dropdown__list_impressionism .dropdown__item:nth-child(4n + 1) {
+    background: url(../img/impressionism1.jpg);
+}
+
+.dropdown__list_impressionism .dropdown__item:nth-child(4n + 2) {
+    background: url(../img/impressionism2.jpg);
+}
+
+.dropdown__list_impressionism .dropdown__item:nth-child(4n + 3) {
+    background: url(../img/impressionism3.jpg);
+}
+
+.dropdown__list_impressionism .dropdown__item:nth-child(4n + 4) {
+    background: url(../img/impressionism4.jpg);
+}
+
+.dropdown__list_postimpressionism .dropdown__item:nth-child(4n + 1) {
+    background: url(../img/postimpressionism1.jpg);
+}
+
+.dropdown__list_postimpressionism .dropdown__item:nth-child(4n + 2) {
+    background: url(../img/postimpressionism2.jpg);
+}
+
+.dropdown__list_postimpressionism .dropdown__item:nth-child(4n + 3) {
+    background: url(../img/postimpressionism3.jpg);
+}
+
+.dropdown__list_postimpressionism .dropdown__item:nth-child(4n + 4) {
+    background: url(../img/postimpressionism4.jpg);
+}
+
+.dropdown__list_avantgarde .dropdown__item:nth-child(4n + 1) {
+    background: url(../img/avantgarde1.jpg);
+}
+
+.dropdown__list_avantgarde .dropdown__item:nth-child(4n + 2) {
+    background: url(../img/avantgarde2.jpg);
+}
+
+.dropdown__list_avantgarde .dropdown__item:nth-child(4n + 3) {
+    background: url(../img/avantgarde3.jpg);
+}
+
+.dropdown__list_avantgarde .dropdown__item:nth-child(4n + 4) {
+    background: url(../img/avantgarde4.jpg);
+}
+
+.dropdown__list_futurism .dropdown__item:nth-child(4n + 1) {
+    background: url(../img/futurism1.jpg);
+}
+
+.dropdown__list_futurism .dropdown__item:nth-child(4n + 2) {
+    background: url(../img/futurism2.jpg);
+}
+
+.dropdown__list_futurism .dropdown__item:nth-child(4n + 3) {
+    background: url(../img/futurism3.jpg);
+}
+
+.dropdown__list_futurism .dropdown__item:nth-child(4n + 4) {
+    background: url(../img/futurism4.jpg);
+}
+
+.dropdown__list::-webkit-scrollbar {
+    width: 2px;
+}
+
+.dropdown__list::-webkit-scrollbar-track {
+    background-color: #000;
+}
+
+.dropdown__list::-webkit-scrollbar-thumb {
+    background-color: var(--color-white);
+}
+
+.header__hero {
+    padding-top: 63px;
+    padding-bottom: 122px;
+}
+
+.hero__heading {
+    max-width: 597px;
+    font-size: 72px;
+    line-height: 98px;
+    font-weight: bold;
+    color: var(--color-white);
+}
+
+.hero__paragraph {
+    margin-top: 5px;
+    max-width: 579px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--color-white);
+}
+
+.hero__btn {
+    margin-top: 92px;
+    padding: 22.5px 35px;
+    border: none;
+    background: var(--color-purple);
+    border-radius: 100px;
+    color: var(--color-white);
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.about {
+    padding: 80px 0;
+}
+
+.about__heading {
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 65px;
+    color: var(--color-black);
+}
+
+.about__paragraph {
+    margin-top: 30px;
+    max-width: 1080px;
+    font-size: 16px;
+    line-height: 32px;
+    color: var(--color-black);
+}
+
+.gallery {
+    padding: 80px 0;
+    height: 995px;
+    background: url(../img/gallery.jpg);
+    color: var(--color-white);
+}
+
+.gallery__container {
+    display: flex;
+    height: 100%;
+}
+
+.gallery__left {
+    max-width: 401px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery__heading {
+    font-size: 48px;
+    line-height: 65px;
+    font-weight: normal;
+}
+
+.gallery__filter {
+    margin-top: 30px;
+}
+
+.gallery__filter p {
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 32px;
+}
+
+.choices__inner {
+    background: transparent;
+    border: 1px solid var(--color-white);
+    border-radius: 6px;
+}
+
+.is-open .choices__inner {
+    border: 1px solid var(--color-white);
+    border-radius: 6px;
+}
+
+.choices[data-type*="select-one"]:after {
+    margin-top: -4.5px;
+    border: solid var(--color-white);
+    border-width: 0 1px 1px 0;
+    padding: 3px;
+    transform: rotate(45deg);
+}
+
+.choices[data-type*="select-one"].is-open:after {
+    margin-top: -1.5px;
+    transform: rotate(225deg);
+}
+
+.choices__list--dropdown .choices__item--selectable.is-highlighted {
+    background-color: transparent;
+}
+
+.choices__list--dropdown {
+    background-color: transparent;
+    border-radius: 6px;
+    color: #999999;
+    border-color: #999;
+}
+
+.choices__item--choice:not(:last-child) {
+    border-bottom: 1px solid #999;
+}
+
+.gallery__info {
+    margin-top: auto;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 32px;
+}
+
+.gallery__info a {
+    color: var(--color-purple);
+}
+
+.splide__slide {
+    background: turquoise;
+}
+
+.splide__arrow {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    background-color: #666;
+}
+
+.splide__arrow--prev, .splide__arrow--next {
+    position: relative;
+}
+
+.splide__arrow--prev svg {
+    position: absolute;
+    left: 11px;
+    top: 9px;
+    transform: rotate(180deg);
+}
+
+.splide__arrow--next svg {
+    position: absolute;
+    right: 11px;
+    top: 9px;
+}
