@@ -33,6 +33,13 @@ body {
     margin: 0 auto;
 }
 
+.section__heading {
+    font-size: 48px;
+    line-height: 65px;
+    font-weight: normal;
+    color: var(--color-black);
+}
+
 .header {
     margin: 0 auto;
     background: url(../img/header-slide1.jpg) no-repeat center center;
@@ -310,13 +317,6 @@ i {
     padding: 80px 0;
 }
 
-.about__heading {
-    font-weight: normal;
-    font-size: 48px;
-    line-height: 65px;
-    color: var(--color-black);
-}
-
 .about__paragraph {
     margin-top: 30px;
     max-width: 1080px;
@@ -345,13 +345,11 @@ i {
 }
 
 .gallery__heading {
-    font-size: 48px;
-    line-height: 65px;
-    font-weight: normal;
+    color: var(--color-white);
 }
 
 .gallery__filter {
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .gallery__filter p {
@@ -411,18 +409,21 @@ i {
     color: var(--color-purple);
 }
 
+.gallery__right {
+    padding-top: 85px;
+    padding-left: 50px;
+}
+
 .swiper-container {
-    width: 100%;
-    height: 100%;
+    width: 1150px;
+    height: 750px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    height: calc((100% - 30px) / 2);
+    height: 350px;
+    width: 350px !important;
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -435,4 +436,176 @@ i {
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
+}
+
+.swiper-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: initial;
+}
+
+.swiper__instruments {
+    margin-bottom: 30px;
+    width: 130px;
+    display: flex;
+}
+
+.swiper__prev,
+.swiper__next {
+    width: 30px;
+    height: 30px;
+    background: none;
+    border: none;
+}
+
+.catalog {
+    padding-top: 80px;
+}
+
+.catalog__top {
+    display: flex;
+}
+
+.tabs__wrappper {
+    margin-left: 39px;
+    display: flex;
+    align-items: center;
+}
+
+.tabs__trigger {
+    width: 46px;
+    height: 46px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.tabs__trigger:not(:last-child) {
+    margin-right: 50px;
+}
+
+.tabs__trigger:nth-child(1) {
+    background: url(../img/flag-france.jpg) no-repeat center center;
+}
+
+.tabs__trigger:nth-child(2) {
+    background: url(../img/flag-germany.jpg) no-repeat center center;
+}
+
+.tabs__trigger:nth-child(3) {
+    background: url(../img/flag-italy.jpg) no-repeat center center;
+}
+
+.tabs__trigger:nth-child(4) {
+    background: url(../img/flag-russia.jpg) no-repeat center center;
+}
+
+.tabs__trigger:nth-child(5) {
+    background: url(../img/flag-belgium.jpg) no-repeat center center;
+}
+
+.catalog__pragraph {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    max-width: 1080px;
+    color: var(--color-black);
+    font-size: 16px;
+    line-height: 32px;
+}
+
+.catalog__main {
+    display: flex;
+}
+
+.person__image {
+    margin-bottom: 30px;
+}
+
+.person__name {
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+}
+
+.person__info {
+    max-width: 749px;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.person__info .person__birth {
+    margin-bottom: 14px;
+    display: block;
+    font-size: 12px;
+    line-height: 16px;
+    color: #999999;
+}
+
+.catalog__accordion {
+    margin-left: 50px;
+    width: 800px;
+}
+
+.accordion__trigger {
+    background-color: #fff;
+    color: var(--color-black);
+    font-family: "Open Sans";
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    border-top: 1px solid #caca;
+}
+
+.accordion__trigger_last {
+    border-bottom: 1px solid #caca;
+}
+
+.accordion__active {
+    border-bottom: 1px solid #caca;
+    color: #7943a4;
+}
+
+.accordion__trigger:hover {
+    color: var(--color-purple);
+}
+
+.accordion__content {
+    padding: 0 18px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 206px;
+    background-color: white;
+    max-height: 210px;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.2s ease-out;
+}
+
+.accordion-content__item {
+    font-size: 16px;
+    line-height: 32px;
+    color: var(--color-black);
+    border: none;
+    background: none;
+    cursor: pointer;
+    text-align: left;
+}
+
+.accordion-content__item_active {
+    height: 210px;
+    transition: height 0.2s ease-out;
+}
+
+.accordion-content__item:hover {
+    color: var(--color-purple);
 }
