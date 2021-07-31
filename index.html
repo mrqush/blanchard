@@ -340,11 +340,11 @@
                         Каталог
                     </h3>
                     <div class="tabs__wrappper">
-                        <button class="tabs__trigger"></button>
-                        <button class="tabs__trigger"></button>
-                        <button class="tabs__trigger"></button>
-                        <button class="tabs__trigger"></button>
-                        <button class="tabs__trigger"></button>
+                        <button class="tabs__trigger" data-path="France"></button>
+                        <button class="tabs__trigger" data-path="Germany"></button>
+                        <button class="tabs__trigger" data-path="Italy"></button>
+                        <button class="tabs__trigger" data-path="Russia"></button>
+                        <button class="tabs__trigger" data-path="Belgium"></button>
                     </div>
                 </div>
                 <p class="catalog__pragraph">
@@ -355,7 +355,7 @@
                     на независимые элементы.
                 </p>
                 <div class="catalog__main">
-                    <div class="catalog__person">
+                    <div class="catalog__person" data-target="Italy">
                         <img class="person__image" src="img/domenico.jpg" alt="Доменико Гирландайо">
                         <p class="person__name">
                             Доменико Гирландайо
@@ -369,8 +369,23 @@
                             персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).
                         </p>
                     </div>
+                    <div class="catalog__person" data-target="France Germany Russia Belgium">
+                        <img class="person__image" src="img/empty.svg" alt="Художник">
+                        <p class="person__name">
+                            Что мы о нём знаем?
+                        </p>
+                        <p class="person__info">
+                            Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+                        </p>
+                        <a href="$">
+                            В галерею
+                        </a>
+                    </div>
                     <div class="catalog__accordion">
-                        <button class="accordion__trigger">C 1400 по 1499 гг.</button>
+                        <button class="accordion__trigger">C 1400 по 1499 гг.
+                            <span class="trigger__arrow">
+                            </span>
+                        </button>
                         <div class="accordion__content">
                             <button class="accordion-content__item">
                                 Бенедетто ди Биндо
@@ -399,30 +414,177 @@
                             <button class="accordion-content__item">
                                 Бьяджо д’Антонио Туччи
                             </button>
+                            <button class="accordion-content__item">
+                                Веккьетта
+                            </button>
+                            <button class="accordion-content__item">
+                                Андреа Верроккьо
+                            </button>
+                            <button class="accordion-content__item">
+                                Доменико Гирландайо
+                            </button>
+                            <button class="accordion-content__item">
+                                Беноццо Гоццоли
+                            </button>
+                            <button class="accordion-content__item">
+                                Граначчи, Франческо
+                            </button>
+                            <button class="accordion-content__item">
+                                Грегорио ди Чекко
+                            </button>
+                            <button class="accordion-content__item">
+                                Джованни да Удине
+                            </button>
+                            <button class="accordion-content__item">
+                                Джованни ди Паоло
+                            </button>
+                            <button class="accordion-content__item">
+                                Джорджоне
+                            </button>
+                            <button class="accordion-content__item">
+                                Парентино, Бернардо
+                            </button>
+                            <button class="accordion-content__item">
+                                Пезеллино
+                            </button>
+                            <button class="accordion-content__item">
+                                Пьетро Перуджино
+                            </button>
+                            <button class="accordion-content__item">
+                                Перуцци, Бальдассаре
+                            </button>
+                            <button class="accordion-content__item">
+                                Пизанелло
+                            </button>
+                            <button class="accordion-content__item">
+                                Пинтуриккьо
+                            </button>
                         </div>
-                        <button class="accordion__trigger">C 1500 по 1599 гг.</button>
-                        <div class="accordion__content">
-                            content2
+                        <button class="accordion__trigger">C 1500 по 1599 гг.
+                            <span class="trigger__arrow">
+                            </span>
+                        </button>
+                        <div class="accordion__content accordion__content_empty">
+                            <div class="content__img">
+                                <span>
+                                </span>
+                            </div>
+                            <div class="content__text">
+                                <p class="text__heading">
+                                    Здесь пока пусто
+                                </p>
+                                <p class="text__paragraph">
+                                    А в галерее вы всегда можете найти что-то интересное для себя
+                                </p>
+                                <a href="#">
+                                    В галерею
+                                </a>
+                            </div>
                         </div>
-                        <button class="accordion__trigger">C 1600 по 1699 гг.</button>
-                        <div class="accordion__content">
-                            content2
+                        <button class="accordion__trigger">C 1600 по 1699 гг.
+                            <span class="trigger__arrow">
+                            </span>
+                        </button>
+                        <div class="accordion__content accordion__content_empty">
+                            <div class="content__img">
+                                <span>
+                                </span>
+                            </div>
+                            <div class="content__text">
+                                <p class="text__heading">
+                                    Здесь пока пусто
+                                </p>
+                                <p class="text__paragraph">
+                                    А в галерее вы всегда можете найти что-то интересное для себя
+                                </p>
+                                <a href="#">
+                                    В галерею
+                                </a>
+                            </div>
                         </div>
-                        <button class="accordion__trigger">C 1700 по 1799 гг.</button>
-                        <div class="accordion__content">
-                            content2
+                        <button class="accordion__trigger">C 1700 по 1799 гг.
+                            <span class="trigger__arrow">
+                            </span>
+                        </button>
+                        <div class="accordion__content accordion__content_empty">
+                            <div class="content__img">
+                                <span>
+                                </span>
+                            </div>
+                            <div class="content__text">
+                                <p class="text__heading">
+                                    Здесь пока пусто
+                                </p>
+                                <p class="text__paragraph">
+                                    А в галерее вы всегда можете найти что-то интересное для себя
+                                </p>
+                                <a href="#">
+                                    В галерею
+                                </a>
+                            </div>
                         </div>
-                        <button class="accordion__trigger">C 1800 по 1899 гг.</button>
-                        <div class="accordion__content">
-                            content2
+                        <button class="accordion__trigger">C 1800 по 1899 гг.
+                            <span class="trigger__arrow">
+                            </span>
+                        </button>
+                        <div class="accordion__content accordion__content_empty">
+                            <div class="content__img">
+                                <span>
+                                </span>
+                            </div>
+                            <div class="content__text">
+                                <p class="text__heading">
+                                    Здесь пока пусто
+                                </p>
+                                <p class="text__paragraph">
+                                    А в галерее вы всегда можете найти что-то интересное для себя
+                                </p>
+                                <a href="#">
+                                    В галерею
+                                </a>
+                            </div>
                         </div>
-                        <button class="accordion__trigger">C 1900 по 1999 гг.</button>
-                        <div class="accordion__content">
-                            content2
+                        <button class="accordion__trigger">C 1900 по 1999 гг.
+                            <span class="trigger__arrow">
+                            </span>
+                        </button>
+                        <div class="accordion__content accordion__content_empty">
+                            <div class="content__img">
+                                <span>
+                                </span>
+                            </div>
+                            <div class="content__text">
+                                <p class="text__heading">
+                                    Здесь пока пусто
+                                </p>
+                                <p class="text__paragraph">
+                                    А в галерее вы всегда можете найти что-то интересное для себя
+                                </p>
+                                <a href="#">
+                                    В галерею
+                                </a>
+                            </div>
                         </div>
-                        <button class="accordion__trigger accordion__trigger_last">C 2000 г.</button>
-                        <div class="accordion__content">
-                            content2
+                        <button class="accordion__trigger accordion__trigger_last">C 2000 г.
+                            <span class="trigger__arrow">
+                            </span>
+                        </button>
+                        <div class="accordion__content accordion__content_empty">
+                            <div class="content__img">
+                                <span>
+                                </span>
+                            </div>
+                            <div class="content__text">
+                                <p class="text__heading">
+                                    Здесь пока пусто
+                                </p>
+                                <p class="text__paragraph">
+                                    А в галерее вы всегда можете найти что-то интересное для себя
+                                </p>
+                                <a href="#">
+                                    В галерею
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>

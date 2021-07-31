@@ -21,19 +21,41 @@ const choices = new Choices(element, {
     itemSelectText: '',
 })
 
-let accordion = document.getElementsByClassName('accordion__trigger');
+let tabsTriggers = [];
+
+document.querySelectorAll('.tabs__trigger').forEach((tabsTrigger) => {
+    tabsTriggers.push(tabsTrigger);
+    tabsTrigger.addEventListener('click', (e) => {
+        const path = e.currentTarget.dataset.path;
+        for(let item of tabsTriggers) {
+            item.classList.remove('tabs__trigger_active');
+        }
+        document.querySelectorAll('catalog__person').forEach((tabContent) => {
+            tabContent.classList.remove('catalog__person_active');
+        })
+
+        document.querySelector(`[data-path="${path}"]`).classList.add('tabs__trigger_active');
+        document.querySelector(`[data-target="${path}"]`).classList.add('catalog__person_active');
+    })
+})
+
+const accordion = document.getElementsByClassName('accordion__trigger');
 
 for (let i = 0; i < accordion.length; i++) {
     accordion[i].addEventListener('click', function () {
-        this.classList.toggle('accordion__active');
+        let status = this.classList.contains('accordion__active') ? 'opened' : 'closed';
 
-        let content = this.nextElementSibling;
-        if (content.classList.contains('accordion-content__item_active')) {
-            content.classList.remove('accordion-content__item_active');
-        } else {
-            content.classList.add('accordion-content__item_active');
+        for (let item of accordion) {
+            item.classList.remove('accordion__active');
+            let content = item.nextElementSibling;
+            let arrow = item.firstElementChild;
+            content.classList.remove('accordion__content_active');
+            arrow.classList.remove('trigger__arrow_active');
         }
-        // content.classList.remove('accordion-content__item_active');
-        // content.classList.toggle('accordion-content__item_active');
+        if (status === 'closed') {
+            this.classList.add('accordion__active');
+            this.nextElementSibling.classList.add('accordion__content_active');
+            this.firstElementChild.classList.add('trigger__arrow_active');
+        }
     });
 }
